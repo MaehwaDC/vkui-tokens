@@ -18,19 +18,15 @@ export interface ThemeTutoriaOverValues {
 
 export interface LocalTutoriaColorsDescriptionStruct {
 	// токены цветов тутории
-	tutoriaColorAccent: ColorDescription;
-	tutoriaColorPrimary: ColorDescription;
-	tutoriaColorSecondary: ColorDescription;
-	tutoriaColorContrast: ColorDescription;
-	tutoriaColorAccentSoft: ColorDescription;
-	tutoriaColorSuccess: ColorDescription;
-	tutoriaColorSuccessSoft: ColorDescription;
-	tutoriaColorWarning: ColorDescription;
-	tutoriaColorWarningSoft: ColorDescription;
-	tutoriaColorError: ColorDescription;
-	tutoriaColorErrorSoft: ColorDescription;
-	tutoriaColorInfo: ColorDescription;
-	tutoriaColorInfoSoft: ColorDescription;
+	colorBackdropContrast: ColorDescription;
+	colorBackgroundWarning: ColorDescription;
+	colorBackgroundWarningTint: ColorDescription;
+	colorBackgroundAccentTint: ColorDescription;
+	colorBackgroundColorPrimary: ColorDescription;
+	colorBackgroundPositiveTint: ColorDescription;
+	colorBackgroundNegativeTint: ColorDescription;
+	colorBackgroundInfo: ColorDescription;
+	colorBackgroundInfoTint: ColorDescription;
 }
 
 export interface LocalTutoriaFontStruct {
