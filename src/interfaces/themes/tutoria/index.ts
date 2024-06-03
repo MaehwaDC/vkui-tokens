@@ -10,6 +10,7 @@ import { ThemeVkBase, ThemeVkBaseDescription } from '@/interfaces/themes/vkBase'
 
 export interface ThemeTutoriaLocalSizes {
 	tutoriaSizePaddingCard: number;
+	tutoriaLayoutMaxWidth: number;
 }
 
 export interface ThemeTutoriaOverValues {
@@ -27,6 +28,7 @@ export interface LocalTutoriaColorsDescriptionStruct {
 	colorBackgroundNegativeTint: ColorDescription;
 	colorBackgroundInfo: ColorDescription;
 	colorBackgroundInfoTint: ColorDescription;
+	tutoriaColorCardBoxShadow: ColorDescription;
 }
 
 export interface LocalTutoriaFontStruct {
