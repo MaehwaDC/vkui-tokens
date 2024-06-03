@@ -2,11 +2,11 @@ import {
 	LocalTutoriaColorsDescriptionStruct,
 	ThemeTutoriaDescription,
 } from '@/interfaces/themes/tutoria';
-import { lightTheme } from '@/themeDescriptions/base/vk';
+import { darkTheme, lightTheme } from '@/themeDescriptions/base/vk';
 
-const tutoriaFontFamilyFallbacks = '-apple-system, system-ui, "Helvetica Neue", Roboto, sans-serif';
-const tutoriaFontFamilyVK = `"VK Sans Display", ${tutoriaFontFamilyFallbacks}`;
-const tutoriaFontFamilyRoboto = `Roboto, ${tutoriaFontFamilyFallbacks}`;
+const fontFamilyFallbacks = 'Helvetica, Arial, sans-serif';
+const fontFamilyAccent = `VKSansDisplay, ${fontFamilyFallbacks}`;
+const fontFamilyBase = `Roboto, ${fontFamilyFallbacks}`;
 
 export const tutoriaThemeColors: LocalTutoriaColorsDescriptionStruct = {
 	tutoriaColorAccent: { normal: '#07F', hover: '#3392FF', active: '#66ADFF' },
@@ -26,6 +26,8 @@ export const tutoriaThemeColors: LocalTutoriaColorsDescriptionStruct = {
 
 export const tutoriaTheme: ThemeTutoriaDescription = {
 	...lightTheme,
+	themeName: 'tutoria',
+	themeNameBase: 'tutoria',
 	colors: {
 		...lightTheme.colors,
 		...tutoriaThemeColors,
@@ -40,15 +42,15 @@ export const tutoriaTheme: ThemeTutoriaDescription = {
 	// sizes
 
 	// fonts
-	tutoriaFontFamilyFallbacks,
-	tutoriaFontFamilyVK,
-	tutoriaFontFamilyRoboto,
+	fontFamilyFallbacks,
+	fontFamilyAccent,
+	fontFamilyBase,
 	fontTitle1: {
 		regular: {
 			fontSize: 40,
 			fontWeight: 600,
 			lineHeight: 44,
-			fontFamily: tutoriaFontFamilyVK,
+			fontFamily: fontFamilyAccent,
 		},
 	},
 
@@ -57,7 +59,7 @@ export const tutoriaTheme: ThemeTutoriaDescription = {
 			fontSize: 32,
 			fontWeight: 600,
 			lineHeight: 36,
-			fontFamily: tutoriaFontFamilyVK,
+			fontFamily: fontFamilyAccent,
 		},
 	},
 
@@ -66,7 +68,7 @@ export const tutoriaTheme: ThemeTutoriaDescription = {
 			fontSize: 24,
 			fontWeight: 600,
 			lineHeight: 28,
-			fontFamily: tutoriaFontFamilyRoboto,
+			fontFamily: fontFamilyBase,
 		},
 	},
 
@@ -75,13 +77,13 @@ export const tutoriaTheme: ThemeTutoriaDescription = {
 			fontSize: 16,
 			fontWeight: 500,
 			lineHeight: 24,
-			fontFamily: tutoriaFontFamilyRoboto,
+			fontFamily: fontFamilyBase,
 		},
 		compact: {
 			fontSize: 14,
 			fontWeight: 500,
 			lineHeight: 20,
-			fontFamily: tutoriaFontFamilyRoboto,
+			fontFamily: fontFamilyBase,
 		},
 	},
 
@@ -90,13 +92,13 @@ export const tutoriaTheme: ThemeTutoriaDescription = {
 			fontSize: 20,
 			fontWeight: 600,
 			lineHeight: 24,
-			fontFamily: tutoriaFontFamilyRoboto,
+			fontFamily: fontFamilyBase,
 		},
 		compact: {
 			fontSize: 16,
 			fontWeight: 600,
 			lineHeight: 24,
-			fontFamily: tutoriaFontFamilyRoboto,
+			fontFamily: fontFamilyBase,
 		},
 	},
 
@@ -105,7 +107,7 @@ export const tutoriaTheme: ThemeTutoriaDescription = {
 			fontSize: 16,
 			fontWeight: 600,
 			lineHeight: 20,
-			fontFamily: tutoriaFontFamilyRoboto,
+			fontFamily: fontFamilyBase,
 		},
 	},
 
@@ -114,7 +116,7 @@ export const tutoriaTheme: ThemeTutoriaDescription = {
 			fontSize: 14,
 			fontWeight: 600,
 			lineHeight: 18,
-			fontFamily: tutoriaFontFamilyRoboto,
+			fontFamily: fontFamilyBase,
 		},
 	},
 
@@ -123,13 +125,13 @@ export const tutoriaTheme: ThemeTutoriaDescription = {
 			fontSize: 16,
 			fontWeight: 400,
 			lineHeight: 24,
-			fontFamily: tutoriaFontFamilyRoboto,
+			fontFamily: fontFamilyBase,
 		},
 		compact: {
 			fontSize: 16,
 			fontWeight: 500,
 			lineHeight: 24,
-			fontFamily: tutoriaFontFamilyRoboto,
+			fontFamily: fontFamilyBase,
 		},
 	},
 
@@ -138,13 +140,13 @@ export const tutoriaTheme: ThemeTutoriaDescription = {
 			fontSize: 14,
 			fontWeight: 400,
 			lineHeight: 20,
-			fontFamily: tutoriaFontFamilyRoboto,
+			fontFamily: fontFamilyBase,
 		},
 		compact: {
 			fontSize: 14,
 			fontWeight: 500,
 			lineHeight: 20,
-			fontFamily: tutoriaFontFamilyRoboto,
+			fontFamily: fontFamilyBase,
 		},
 	},
 
@@ -153,13 +155,13 @@ export const tutoriaTheme: ThemeTutoriaDescription = {
 			fontSize: 12,
 			fontWeight: 400,
 			lineHeight: 16,
-			fontFamily: tutoriaFontFamilyRoboto,
+			fontFamily: fontFamilyBase,
 		},
 		compact: {
 			fontSize: 12,
 			fontWeight: 500,
 			lineHeight: 16,
-			fontFamily: tutoriaFontFamilyRoboto,
+			fontFamily: fontFamilyBase,
 		},
 	},
 
@@ -189,5 +191,15 @@ export const tutoriaTheme: ThemeTutoriaDescription = {
 	},
 	sizeBorderRadius: {
 		regular: 12,
+	},
+};
+
+export const tutoriaDarkTheme = {
+	...tutoriaTheme,
+	themeName: 'tutoriaDark',
+
+	colors: {
+		...tutoriaTheme.colors,
+		...darkTheme.colors,
 	},
 };

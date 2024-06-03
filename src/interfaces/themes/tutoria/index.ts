@@ -1,15 +1,17 @@
-import { ColorDescription, ColorsDescriptionStruct } from '@/interfaces/general/colors';
+import { ThemeCssVars } from '@/interfaces/general';
+import {
+	ColorDescription,
+	ColorsDescriptionStruct,
+	ColorWithStates,
+} from '@/interfaces/general/colors';
 import { Adaptive } from '@/interfaces/general/tools';
 import { Font } from '@/interfaces/general/typography';
-import { ThemeVkBaseDescription } from '@/interfaces/themes/vkBase';
+import { ThemeVkBase, ThemeVkBaseDescription } from '@/interfaces/themes/vkBase';
 
 export interface ThemeTutoriaLocalSizes {}
 
 export interface ThemeTutoriaOverValues {
 	// кастомные шрифты
-	tutoriaFontFamilyFallbacks: string;
-	tutoriaFontFamilyRoboto: string;
-	tutoriaFontFamilyVK: string;
 }
 
 export interface LocalTutoriaColorsDescriptionStruct {
@@ -40,9 +42,20 @@ type ThemeTutoriaAdaptiveTokens = {
 	[key in keyof ThemeTutoriaAdaptiveValues]: Adaptive<ThemeTutoriaAdaptiveValues[key]>;
 };
 
+export type TutoriaLocalColors = {
+	[key in keyof LocalTutoriaColorsDescriptionStruct]: ColorWithStates;
+};
+
 export interface ThemeTutoriaDescription
 	extends ThemeVkBaseDescription,
 		ThemeTutoriaOverValues,
 		ThemeTutoriaAdaptiveTokens {
 	colors: LocalTutoriaColorsDescriptionStruct & ColorsDescriptionStruct;
 }
+export interface ThemeTutoria
+	extends ThemeVkBase,
+		ThemeTutoriaOverValues,
+		TutoriaLocalColors,
+		ThemeTutoriaAdaptiveTokens {}
+
+export interface ThemeTutoriaCssVars extends ThemeCssVars<ThemeTutoria> {}
