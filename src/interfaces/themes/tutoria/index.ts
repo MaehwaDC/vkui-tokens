@@ -8,7 +8,9 @@ import { Adaptive } from '@/interfaces/general/tools';
 import { Font } from '@/interfaces/general/typography';
 import { ThemeVkBase, ThemeVkBaseDescription } from '@/interfaces/themes/vkBase';
 
-export interface ThemeTutoriaLocalSizes {}
+export interface ThemeTutoriaLocalSizes {
+	tutoriaSizePaddingCard: number;
+}
 
 export interface ThemeTutoriaOverValues {
 	// кастомные шрифты
@@ -37,7 +39,7 @@ export interface LocalTutoriaFontStruct {
 	tutoriaFontParagraph2: Font;
 	tutoriaFontParagraph3: Font;
 }
-type ThemeTutoriaAdaptiveValues = LocalTutoriaFontStruct;
+type ThemeTutoriaAdaptiveValues = LocalTutoriaFontStruct & ThemeTutoriaLocalSizes;
 type ThemeTutoriaAdaptiveTokens = {
 	[key in keyof ThemeTutoriaAdaptiveValues]: Adaptive<ThemeTutoriaAdaptiveValues[key]>;
 };

@@ -40,6 +40,9 @@ export const tutoriaTheme: ThemeTutoriaDescription = {
 		colorStrokeAccentThemed: '#D4D9DE',
 	},
 	// sizes
+	tutoriaSizePaddingCard: {
+		regular: 24,
+	},
 
 	// fonts
 	fontFamilyFallbacks,
@@ -191,6 +194,11 @@ export const tutoriaTheme: ThemeTutoriaDescription = {
 	},
 	sizeBorderRadius: {
 		regular: 12,
+	},
+
+	// layout
+	sizeSplitColPaddingHorizontal: {
+		regular: 24,
 	},
 };
 
