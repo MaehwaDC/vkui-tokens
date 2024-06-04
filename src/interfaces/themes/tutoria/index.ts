@@ -5,7 +5,6 @@ import {
 	ColorWithStates,
 } from '@/interfaces/general/colors';
 import { Adaptive } from '@/interfaces/general/tools';
-import { Font } from '@/interfaces/general/typography';
 import { ThemeVkBase, ThemeVkBaseDescription } from '@/interfaces/themes/vkBase';
 
 export interface ThemeTutoriaLocalSizes {
@@ -62,12 +61,8 @@ export interface LocalTutoriaColorsDescriptionStruct {
 	colorStrokeInfoTint: ColorDescription;
 }
 
-export interface LocalTutoriaFontStruct {
-	tutoriaFontHeadline3: Font;
-	tutoriaFontParagraph1: Font;
-	tutoriaFontParagraph2: Font;
-	tutoriaFontParagraph3: Font;
-}
+export interface LocalTutoriaFontStruct {}
+
 type ThemeTutoriaAdaptiveValues = LocalTutoriaFontStruct & ThemeTutoriaLocalSizes;
 type ThemeTutoriaAdaptiveTokens = {
 	[key in keyof ThemeTutoriaAdaptiveValues]: Adaptive<ThemeTutoriaAdaptiveValues[key]>;

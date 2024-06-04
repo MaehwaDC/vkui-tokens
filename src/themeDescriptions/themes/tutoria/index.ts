@@ -176,92 +176,74 @@ export const tutoriaTheme: ThemeTutoriaDescription = {
 
 	fontSubhead: {
 		regular: {
-			fontSize: 16,
-			fontWeight: 500,
-			lineHeight: 24,
-			fontFamily: fontFamilyBase,
-		},
-		compact: {
 			fontSize: 14,
 			fontWeight: 500,
-			lineHeight: 20,
+			lineHeight: 18,
 			fontFamily: fontFamilyBase,
 		},
 	},
 
 	fontHeadline1: {
 		regular: {
-			fontSize: 20,
-			fontWeight: 600,
-			lineHeight: 24,
-			fontFamily: fontFamilyBase,
-		},
-		compact: {
 			fontSize: 16,
-			fontWeight: 600,
-			lineHeight: 24,
+			fontWeight: 500,
+			lineHeight: 18,
 			fontFamily: fontFamilyBase,
 		},
 	},
 
 	fontHeadline2: {
 		regular: {
-			fontSize: 16,
-			fontWeight: 600,
+			fontSize: 15,
+			fontWeight: 500,
 			lineHeight: 20,
 			fontFamily: fontFamilyBase,
 		},
 	},
 
-	tutoriaFontHeadline3: {
+	fontText: {
+		regular: {
+			fontSize: 16,
+			fontWeight: 400,
+			lineHeight: 24,
+			fontFamily: fontFamilyBase,
+		},
+	},
+
+	fontParagraph: {
 		regular: {
 			fontSize: 14,
-			fontWeight: 600,
+			fontWeight: 400,
 			lineHeight: 18,
 			fontFamily: fontFamilyBase,
 		},
 	},
 
-	tutoriaFontParagraph1: {
+	fontFootnote: {
 		regular: {
-			fontSize: 16,
-			fontWeight: 400,
-			lineHeight: 24,
+			fontSize: 13,
+			fontWeight: 500,
+			lineHeight: 16,
 			fontFamily: fontFamilyBase,
 		},
 		compact: {
-			fontSize: 16,
-			fontWeight: 500,
-			lineHeight: 24,
+			fontSize: 13,
+			fontWeight: 400,
+			lineHeight: 16,
 			fontFamily: fontFamilyBase,
 		},
 	},
 
-	tutoriaFontParagraph2: {
-		regular: {
-			fontSize: 14,
-			fontWeight: 400,
-			lineHeight: 20,
-			fontFamily: fontFamilyBase,
-		},
-		compact: {
-			fontSize: 14,
-			fontWeight: 500,
-			lineHeight: 20,
-			fontFamily: fontFamilyBase,
-		},
-	},
-
-	tutoriaFontParagraph3: {
+	fontCaption1: {
 		regular: {
 			fontSize: 12,
-			fontWeight: 400,
+			fontWeight: 500,
 			lineHeight: 16,
 			fontFamily: fontFamilyBase,
 		},
 		compact: {
 			fontSize: 12,
-			fontWeight: 500,
+			fontWeight: 400,
 			lineHeight: 16,
 			fontFamily: fontFamilyBase,
 		},
