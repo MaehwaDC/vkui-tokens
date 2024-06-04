@@ -54,6 +54,18 @@ export const tutoriaThemeColors: LocalTutoriaColorsDescriptionStruct = {
 	// separator
 	colorSeparatorPrimaryAlpha: 'rgba(255, 255, 255, 0.20)',
 	colorSeparatorSecondaryAlpha: 'rgba(255, 255, 255, 0.10)',
+
+	// stroke
+	colorStrokePrimary: '#181B1E',
+	colorStrokeSecondary: '#D4D9DE',
+	colorStrokeTertiary: '#E9ECEF',
+	colorStrokeAccentTint: '#99C9FF',
+	colorStrokePositiveTint: '#98EDB7',
+	colorStrokeWarning: '#FC9C0A',
+	colorStrokeWarningTint: '#FED79D',
+	colorStrokeNegativeTint: '#FFB3B5',
+	colorStrokeInfo: '#008DF2',
+	colorStrokeInfoTint: '#99D1FA',
 };
 
 export const tutoriaTheme: ThemeTutoriaDescription = {
@@ -97,6 +109,12 @@ export const tutoriaTheme: ThemeTutoriaDescription = {
 		// separator
 		colorSeparatorPrimary: '#E9ECEF',
 		colorSeparatorSecondary: '#F4F5F7',
+
+		// stroke
+		colorStrokeAccent: '#0077FF',
+		colorStrokeContrast: '#FFFFFF',
+		colorStrokeNegative: '#FF4046',
+		colorStrokePositive: '#02D14E',
 	},
 
 	// sizes

@@ -49,6 +49,17 @@ export interface LocalTutoriaColorsDescriptionStruct {
 
 	colorSeparatorPrimaryAlpha: ColorDescription;
 	colorSeparatorSecondaryAlpha: ColorDescription;
+
+	colorStrokePrimary: ColorDescription;
+	colorStrokeSecondary: ColorDescription;
+	colorStrokeTertiary: ColorDescription;
+	colorStrokeAccentTint: ColorDescription;
+	colorStrokePositiveTint: ColorDescription;
+	colorStrokeWarning: ColorDescription;
+	colorStrokeWarningTint: ColorDescription;
+	colorStrokeNegativeTint: ColorDescription;
+	colorStrokeInfo: ColorDescription;
+	colorStrokeInfoTint: ColorDescription;
 }
 
 export interface LocalTutoriaFontStruct {
