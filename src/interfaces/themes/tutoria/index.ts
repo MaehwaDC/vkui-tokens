@@ -19,7 +19,6 @@ export interface ThemeTutoriaOverValues {
 
 export interface LocalTutoriaColorsDescriptionStruct {
 	// токены цветов тутории
-	colorBackdropContrast: ColorDescription;
 	colorBackgroundWarning: ColorDescription;
 	colorBackgroundWarningTint: ColorDescription;
 	colorBackgroundAccentTint: ColorDescription;
@@ -32,6 +31,21 @@ export interface LocalTutoriaColorsDescriptionStruct {
 
 	colorTextWarning: ColorDescription;
 	colorTextInfo: ColorDescription;
+
+	colorBackdropContrast: ColorDescription;
+	colorBackdropAccent: ColorDescription;
+	colorBackdropPrimary: ColorDescription;
+	colorBackdropSecondary: ColorDescription;
+	colorBackdropInverse: ColorDescription;
+	colorBackdropOverlay: ColorDescription;
+	colorBackdropNeutral: ColorDescription;
+	colorBackdropPositive: ColorDescription;
+	colorBackdropNegative: ColorDescription;
+	colorBackdropWarning: ColorDescription;
+	colorBackdropInfo: ColorDescription;
+
+	colorIconInfo: ColorDescription;
+	colorIconLink: ColorDescription;
 }
 
 export interface LocalTutoriaFontStruct {
