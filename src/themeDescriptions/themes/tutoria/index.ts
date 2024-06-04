@@ -131,9 +131,9 @@ export const tutoriaTheme: ThemeTutoriaDescription = {
 	fontFamilyBase,
 	fontTitle1: {
 		regular: {
-			fontSize: 40,
+			fontSize: 24,
 			fontWeight: 600,
-			lineHeight: 44,
+			lineHeight: 28,
 			fontFamily: fontFamilyAccent,
 		},
 		compact: {
@@ -146,9 +146,9 @@ export const tutoriaTheme: ThemeTutoriaDescription = {
 
 	fontTitle2: {
 		regular: {
-			fontSize: 32,
+			fontSize: 20,
 			fontWeight: 600,
-			lineHeight: 36,
+			lineHeight: 24,
 			fontFamily: fontFamilyAccent,
 		},
 		compact: {
@@ -161,9 +161,9 @@ export const tutoriaTheme: ThemeTutoriaDescription = {
 
 	fontTitle3: {
 		regular: {
-			fontSize: 24,
+			fontSize: 16,
 			fontWeight: 600,
-			lineHeight: 28,
+			lineHeight: 24,
 			fontFamily: fontFamilyAccent,
 		},
 		compact: {
