@@ -46,6 +46,9 @@ export interface LocalTutoriaColorsDescriptionStruct {
 
 	colorIconInfo: ColorDescription;
 	colorIconLink: ColorDescription;
+
+	colorSeparatorPrimaryAlpha: ColorDescription;
+	colorSeparatorSecondaryAlpha: ColorDescription;
 }
 
 export interface LocalTutoriaFontStruct {
