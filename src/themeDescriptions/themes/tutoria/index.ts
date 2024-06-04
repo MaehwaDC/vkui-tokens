@@ -8,7 +8,16 @@ const fontFamilyFallbacks = 'Helvetica, Arial, sans-serif';
 const fontFamilyAccent = `VKSansDisplay, ${fontFamilyFallbacks}`;
 const fontFamilyBase = `Roboto, ${fontFamilyFallbacks}`;
 
+const colors = {
+	accent: { normal: '#0077FF', hover: '#3392FF', active: '#66ADFF' },
+	secondary: { normal: '#F4F5F7', hover: '#E9ECEF', active: '#D4D9DE' },
+	contrast: { normal: '#FFFFFF', hover: '#F4F5F7', active: '#E9ECEF' },
+	negate: { normal: '#FF4046', hover: '#FF666B', active: '#FFB3B5' },
+	positive: { normal: '#02D14E', hover: '#34DA71', active: '#66E394' },
+};
+
 export const tutoriaThemeColors: LocalTutoriaColorsDescriptionStruct = {
+	// background
 	colorBackdropContrast: '#FFFFFF',
 	colorBackgroundAccentTint: { normal: '#99C9FF', hover: '#CCE4FF', active: '#99C9FF' },
 	colorBackgroundColorPrimary: { normal: '#181B1E', hover: '#41474E', active: '#5C646D' },
@@ -18,7 +27,13 @@ export const tutoriaThemeColors: LocalTutoriaColorsDescriptionStruct = {
 	colorBackgroundNegativeTint: { normal: '#FFB3B5', hover: '#FFD9DA', active: '#FFB3B5' },
 	colorBackgroundInfo: { normal: '#008DF2', hover: '#33A4F5', active: '#66BBF7' },
 	colorBackgroundInfoTint: { normal: '#99D1FA', hover: '#CCE8FC', active: '#99D1FA' },
+
+	// shadow
 	tutoriaColorCardBoxShadow: 'rgba(37, 41, 46, 0.04)',
+
+	// text
+	colorTextWarning: '#FC9C0A',
+	colorTextInfo: '#008DF2',
 };
 
 export const tutoriaTheme: ThemeTutoriaDescription = {
@@ -28,13 +43,25 @@ export const tutoriaTheme: ThemeTutoriaDescription = {
 	colors: {
 		...lightTheme.colors,
 		...tutoriaThemeColors,
+		// background
 		colorBackgroundContrast: { normal: 'transparent', hover: '#F4F5F7', active: '#E9ECEF' },
-		colorBackgroundAccent: { normal: '#07F', hover: '#3392FF', active: '#66ADFF' },
-		colorBackgroundSecondary: { normal: '#F4F5F7', hover: '#E9ECEF', active: '#D4D9DE' },
-		colorBackgroundSecondaryAlpha: { normal: '#F4F5F7', hover: '#E9ECEF', active: '#D4D9DE' },
+		colorBackgroundAccent: colors.accent,
+		colorBackgroundSecondary: colors.secondary,
+		colorBackgroundSecondaryAlpha: colors.secondary,
 		colorTransparent: { normal: 'transparent', hover: '#F4F5F7', active: '#E9ECEF' },
-		colorBackgroundNegative: { normal: '#FF4046', hover: '#FF666B', active: '#FFB3B5' },
-		colorBackgroundPositive: { normal: '#02D14E', hover: '#34DA71', active: '#66E394' },
+		colorBackgroundNegative: colors.positive,
+		colorBackgroundPositive: colors.positive,
+
+		// text
+		colorTextPrimary: '#181B1E',
+		colorTextSecondary: '#5C646D',
+		colorTextTertiary: '#939FAD',
+		colorTextContrast: '#FFFFFF',
+		colorTextAccent: '#0077FF',
+		colorTextPositive: '#02D14E',
+		colorTextNegative: '#FF4046',
+		colorTextInfo: '#008DF2',
+
 		colorStrokeAccentThemed: '#D4D9DE',
 	},
 

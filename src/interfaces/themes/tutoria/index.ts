@@ -29,6 +29,9 @@ export interface LocalTutoriaColorsDescriptionStruct {
 	colorBackgroundInfo: ColorDescription;
 	colorBackgroundInfoTint: ColorDescription;
 	tutoriaColorCardBoxShadow: ColorDescription;
+
+	colorTextWarning: ColorDescription;
+	colorTextInfo: ColorDescription;
 }
 
 export interface LocalTutoriaFontStruct {
