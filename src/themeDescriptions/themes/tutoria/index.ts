@@ -120,6 +120,7 @@ export const tutoriaTheme: ThemeTutoriaDescription = {
 	// sizes
 	tutoriaSizePaddingCard: {
 		regular: 24,
+		compact: 16,
 	},
 	tutoriaLayoutMaxWidth: {
 		regular: 1224,
@@ -280,6 +281,7 @@ export const tutoriaTheme: ThemeTutoriaDescription = {
 	// layout
 	sizeSplitColPaddingHorizontal: {
 		regular: 24,
+		compact: 16,
 	},
 };
 
