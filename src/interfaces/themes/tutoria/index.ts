@@ -5,6 +5,7 @@ import {
 	ColorWithStates,
 } from '@/interfaces/general/colors';
 import { Adaptive } from '@/interfaces/general/tools';
+import { Font } from '@/interfaces/general/typography';
 import { ThemeVkBase, ThemeVkBaseDescription } from '@/interfaces/themes/vkBase';
 
 export interface ThemeTutoriaLocalSizes {
@@ -18,53 +19,50 @@ export interface ThemeTutoriaOverValues {
 
 export interface LocalTutoriaColorsDescriptionStruct {
 	// токены цветов тутории
-	colorBackgroundWarning: ColorDescription;
-	colorBackgroundWarningTint: ColorDescription;
-	colorBackgroundAccentTint: ColorDescription;
-	colorBackgroundColorPrimary: ColorDescription;
-	colorBackgroundPositiveTint: ColorDescription;
-	colorBackgroundNegativeTint: ColorDescription;
-	colorBackgroundInfo: ColorDescription;
-	colorBackgroundInfoTint: ColorDescription;
+	tutoriaColorBackgroundPrimary: ColorDescription;
+	tutoriaColorBackgroundContentInverse: ColorDescription;
+	tutoriaColorBackgroundOverlayAlpha: ColorDescription;
+	tutoriaColorBackgroundNeutral: ColorDescription;
+	tutoriaColorBackgroundAccentTint: ColorDescription;
+	tutoriaColorBackgroundWarning: ColorDescription;
+	tutoriaColorBackgroundWarningTint: ColorDescription;
+	tutoriaColorBackgroundColorPrimary: ColorDescription;
+	tutoriaColorBackgroundPositiveTint: ColorDescription;
+	tutoriaColorBackgroundNegativeTint: ColorDescription;
+	tutoriaColorBackgroundInfo: ColorDescription;
+	tutoriaColorBackgroundInfoTint: ColorDescription;
 	tutoriaColorCardBoxShadow: ColorDescription;
 
-	colorTextWarning: ColorDescription;
-	colorTextInfo: ColorDescription;
+	tutoriaColorTextWarning: ColorDescription;
+	tutoriaColorTextInfo: ColorDescription;
 
-	colorBackdropContrast: ColorDescription;
-	colorBackdropAccent: ColorDescription;
-	colorBackdropPrimary: ColorDescription;
-	colorBackdropSecondary: ColorDescription;
-	colorBackdropInverse: ColorDescription;
-	colorBackdropOverlay: ColorDescription;
-	colorBackdropNeutral: ColorDescription;
-	colorBackdropPositive: ColorDescription;
-	colorBackdropNegative: ColorDescription;
-	colorBackdropWarning: ColorDescription;
-	colorBackdropInfo: ColorDescription;
+	tutoriaColorIconWarning: ColorDescription;
+	tutoriaColorIconInfo: ColorDescription;
+	tutoriaColorIconLink: ColorDescription;
 
-	colorIconInfo: ColorDescription;
-	colorIconLink: ColorDescription;
+	tutoriaColorSeparatorPrimaryAlpha: ColorDescription;
+	tutoriaColorSeparatorSecondaryAlpha: ColorDescription;
 
-	colorSeparatorPrimaryAlpha: ColorDescription;
-	colorSeparatorSecondaryAlpha: ColorDescription;
-
-	colorStrokePrimary: ColorDescription;
-	colorStrokeSecondary: ColorDescription;
-	colorStrokeTertiary: ColorDescription;
-	colorStrokeAccentTint: ColorDescription;
-	colorStrokePositiveTint: ColorDescription;
-	colorStrokeWarning: ColorDescription;
-	colorStrokeWarningTint: ColorDescription;
-	colorStrokeNegativeTint: ColorDescription;
-	colorStrokeInfo: ColorDescription;
-	colorStrokeInfoTint: ColorDescription;
+	tutoriaColorStrokePrimary: ColorDescription;
+	tutoriaColorStrokeSecondary: ColorDescription;
+	tutoriaColorStrokeTertiary: ColorDescription;
+	tutoriaColorStrokeAccentTint: ColorDescription;
+	tutoriaColorStrokePositiveTint: ColorDescription;
+	tutoriaColorStrokeWarning: ColorDescription;
+	tutoriaColorStrokeWarningTint: ColorDescription;
+	tutoriaColorStrokeNegativeTint: ColorDescription;
+	tutoriaColorStrokeInfo: ColorDescription;
+	tutoriaColorStrokeInfoTint: ColorDescription;
 }
 
-export interface LocalTutoriaFontStruct {}
+export interface LocalTutoriaFontStruct {
+	tutoriaFontTextTitle1: Font;
+	tutoriaFontTextTitle2: Font;
+	tutoriaFontTextTitle3: Font;
+}
 
 type ThemeTutoriaAdaptiveValues = LocalTutoriaFontStruct & ThemeTutoriaLocalSizes;
-type ThemeTutoriaAdaptiveTokens = {
+export type ThemeTutoriaAdaptiveTokens = {
 	[key in keyof ThemeTutoriaAdaptiveValues]: Adaptive<ThemeTutoriaAdaptiveValues[key]>;
 };
 

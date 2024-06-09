@@ -1,5 +1,7 @@
+import { toneOpacity } from '@/build/helpers/cssHelpers';
 import {
 	LocalTutoriaColorsDescriptionStruct,
+	ThemeTutoriaAdaptiveTokens,
 	ThemeTutoriaDescription,
 } from '@/interfaces/themes/tutoria';
 import { darkTheme, lightTheme } from '@/themeDescriptions/base/vk';
@@ -8,64 +10,85 @@ const fontFamilyFallbacks = 'Helvetica, Arial, sans-serif';
 const fontFamilyAccent = `VKSansDisplay, ${fontFamilyFallbacks}`;
 const fontFamilyBase = `Roboto, ${fontFamilyFallbacks}`;
 
-const colors = {
-	accent: { normal: '#0077FF', hover: '#3392FF', active: '#66ADFF' },
-	secondary: { normal: '#F4F5F7', hover: '#E9ECEF', active: '#D4D9DE' },
-	contrast: { normal: '#FFFFFF', hover: '#F4F5F7', active: '#E9ECEF' },
-	negate: { normal: '#FF4046', hover: '#FF666B', active: '#FFB3B5' },
-	positive: { normal: '#02D14E', hover: '#34DA71', active: '#66E394' },
-};
-
 export const tutoriaThemeColors: LocalTutoriaColorsDescriptionStruct = {
 	// background
-	colorBackgroundAccentTint: { normal: '#99C9FF', hover: '#CCE4FF', active: '#99C9FF' },
-	colorBackgroundColorPrimary: { normal: '#181B1E', hover: '#41474E', active: '#5C646D' },
-	colorBackgroundPositiveTint: { normal: '#98EDB7', hover: '#CAF6DA', active: '#98EDB7' },
-	colorBackgroundWarning: { normal: '#FC9C0A', hover: '#FDB03B', active: '#FED79D' },
-	colorBackgroundWarningTint: { normal: '#FED79D', hover: '#FEEBCE', active: '#FED79D' },
-	colorBackgroundNegativeTint: { normal: '#FFB3B5', hover: '#FFD9DA', active: '#FFB3B5' },
-	colorBackgroundInfo: { normal: '#008DF2', hover: '#33A4F5', active: '#66BBF7' },
-	colorBackgroundInfoTint: { normal: '#99D1FA', hover: '#CCE8FC', active: '#99D1FA' },
+	tutoriaColorBackgroundPrimary: { normal: '#F4F5F7', hover: '#E9ECEF', active: '#D4D9DE' },
+	tutoriaColorBackgroundContentInverse: { normal: '#181B1E', hover: '#41474E', active: '#5C646D' },
+	tutoriaColorBackgroundOverlayAlpha: toneOpacity('#181B1E', 0.4),
+	tutoriaColorBackgroundNeutral: '#939FAD',
+	tutoriaColorBackgroundAccentTint: { normal: '#E5F1FF', hover: '#CCE4FF', active: '#99C9FF' },
+	tutoriaColorBackgroundColorPrimary: { normal: '#181B1E', hover: '#41474E', active: '#5C646D' },
+	tutoriaColorBackgroundPositiveTint: { normal: '#EDF7ED', hover: '#CAF6DA', active: '#98EDB7' },
+	tutoriaColorBackgroundWarning: { normal: '#FC9C0A', hover: '#FDB03B', active: '#FED79D' },
+	tutoriaColorBackgroundWarningTint: { normal: '#FFF5E7', hover: '#FEEBCE', active: '#FED79D' },
+	tutoriaColorBackgroundNegativeTint: { normal: '#FFECED', hover: '#FFD9DA', active: '#FFB3B5' },
+	tutoriaColorBackgroundInfo: { normal: '#008DF2', hover: '#33A4F5', active: '#66BBF7' },
+	tutoriaColorBackgroundInfoTint: { normal: '#ECF3FC', hover: '#CCE8FC', active: '#99D1FA' },
 
 	// shadow
 	tutoriaColorCardBoxShadow: 'rgba(37, 41, 46, 0.04)',
 
 	// text
-	colorTextWarning: '#FC9C0A',
-	colorTextInfo: '#008DF2',
-
-	// backdrop
-	colorBackdropPrimary: '#F4F5F7',
-	colorBackdropSecondary: '#E9ECEF',
-	colorBackdropContrast: '#FFFFFF',
-	colorBackdropAccent: '#0077FF',
-	colorBackdropInverse: '#181B1E',
-	colorBackdropOverlay: 'rgba(24, 27, 30, 0.40)',
-	colorBackdropNeutral: '#939FAD',
-	colorBackdropPositive: '#02D14E',
-	colorBackdropNegative: '#FF4046',
-	colorBackdropWarning: '#FC9C0A',
-	colorBackdropInfo: '#008DF2',
+	tutoriaColorTextWarning: '#FC9C0A',
+	tutoriaColorTextInfo: '#008DF2',
 
 	// icon
-	colorIconInfo: '#008DF2',
-	colorIconLink: '#008DF2',
+	tutoriaColorIconWarning: '#FC9C0A',
+	tutoriaColorIconInfo: '#008DF2',
+	tutoriaColorIconLink: '#008DF2',
 
 	// separator
-	colorSeparatorPrimaryAlpha: 'rgba(255, 255, 255, 0.20)',
-	colorSeparatorSecondaryAlpha: 'rgba(255, 255, 255, 0.10)',
+	tutoriaColorSeparatorPrimaryAlpha: toneOpacity('#E9ECEF', 0.2),
+	tutoriaColorSeparatorSecondaryAlpha: toneOpacity('#E9ECEF', 0.1),
 
 	// stroke
-	colorStrokePrimary: '#181B1E',
-	colorStrokeSecondary: '#D4D9DE',
-	colorStrokeTertiary: '#E9ECEF',
-	colorStrokeAccentTint: '#99C9FF',
-	colorStrokePositiveTint: '#98EDB7',
-	colorStrokeWarning: '#FC9C0A',
-	colorStrokeWarningTint: '#FED79D',
-	colorStrokeNegativeTint: '#FFB3B5',
-	colorStrokeInfo: '#008DF2',
-	colorStrokeInfoTint: '#99D1FA',
+	tutoriaColorStrokePrimary: '#181B1E',
+	tutoriaColorStrokeSecondary: '#D4D9DE',
+	tutoriaColorStrokeTertiary: '#E9ECEF',
+	tutoriaColorStrokeAccentTint: '#99C9FF',
+	tutoriaColorStrokePositiveTint: '#98EDB7',
+	tutoriaColorStrokeWarning: '#FC9C0A',
+	tutoriaColorStrokeWarningTint: '#FED79D',
+	tutoriaColorStrokeNegativeTint: '#FFB3B5',
+	tutoriaColorStrokeInfo: '#008DF2',
+	tutoriaColorStrokeInfoTint: '#99D1FA',
+};
+
+export const tutoriaThemeAdaptiveTokens: ThemeTutoriaAdaptiveTokens = {
+	// fonts
+	tutoriaFontTextTitle1: {
+		regular: {
+			fontSize: 24,
+			fontWeight: 600,
+			lineHeight: 28,
+			fontFamily: fontFamilyBase,
+		},
+	},
+	tutoriaFontTextTitle2: {
+		regular: {
+			fontSize: 20,
+			fontWeight: 600,
+			lineHeight: 24,
+			fontFamily: fontFamilyBase,
+		},
+	},
+	tutoriaFontTextTitle3: {
+		regular: {
+			fontSize: 16,
+			fontWeight: 600,
+			lineHeight: 20,
+			fontFamily: fontFamilyBase,
+		},
+	},
+
+	// sizes
+	tutoriaSizePaddingCard: {
+		regular: 24,
+		compact: 16,
+	},
+	tutoriaLayoutMaxWidth: {
+		regular: 1224,
+	},
 };
 
 export const tutoriaTheme: ThemeTutoriaDescription = {
@@ -76,13 +99,14 @@ export const tutoriaTheme: ThemeTutoriaDescription = {
 		...lightTheme.colors,
 		...tutoriaThemeColors,
 		// background
-		colorBackgroundContrast: { normal: 'transparent', hover: '#F4F5F7', active: '#E9ECEF' },
-		colorBackgroundAccent: colors.accent,
-		colorBackgroundSecondary: colors.secondary,
-		colorBackgroundSecondaryAlpha: colors.secondary,
+		colorBackgroundContent: { normal: '#FFFFFF', hover: '#F4F5F7', active: '#E9ECEF' },
+		colorBackgroundContrast: { normal: '#FFFFFF', hover: '#F4F5F7', active: '#E9ECEF' },
+		colorBackgroundAccent: { normal: '#0077FF', hover: '#3392FF', active: '#66ADFF' },
+		colorBackgroundSecondary: { normal: '#E9ECEF', hover: '#E9ECEF', active: '#D4D9DE' },
+		colorBackgroundSecondaryAlpha: { normal: '#F4F5F7', hover: '#E9ECEF', active: '#D4D9DE' },
 		colorTransparent: { normal: 'transparent', hover: '#F4F5F7', active: '#E9ECEF' },
-		colorBackgroundNegative: colors.positive,
-		colorBackgroundPositive: colors.positive,
+		colorBackgroundNegative: { normal: '#FF4046', hover: '#FF666B', active: '#FFB3B5' },
+		colorBackgroundPositive: { normal: '#02D14E', hover: '#34DA71', active: '#66E394' },
 
 		// text
 		colorTextPrimary: '#181B1E',
@@ -92,9 +116,6 @@ export const tutoriaTheme: ThemeTutoriaDescription = {
 		colorTextAccent: '#0077FF',
 		colorTextPositive: '#02D14E',
 		colorTextNegative: '#FF4046',
-		colorTextInfo: '#008DF2',
-
-		colorStrokeAccentThemed: '#D4D9DE',
 
 		// icon
 		colorIconPrimary: '#181B1E',
@@ -113,18 +134,10 @@ export const tutoriaTheme: ThemeTutoriaDescription = {
 		// stroke
 		colorStrokeAccent: '#0077FF',
 		colorStrokeContrast: '#FFFFFF',
-		colorStrokeNegative: '#FF4046',
 		colorStrokePositive: '#02D14E',
+		colorStrokeNegative: '#FF4046',
 	},
-
-	// sizes
-	tutoriaSizePaddingCard: {
-		regular: 24,
-		compact: 16,
-	},
-	tutoriaLayoutMaxWidth: {
-		regular: 1224,
-	},
+	...tutoriaThemeAdaptiveTokens,
 
 	// fonts
 	fontFamilyFallbacks,
@@ -137,22 +150,22 @@ export const tutoriaTheme: ThemeTutoriaDescription = {
 			lineHeight: 28,
 			fontFamily: fontFamilyAccent,
 		},
-		compact: {
-			fontSize: 24,
+		largeXX: {
+			fontSize: 40,
 			fontWeight: 600,
-			lineHeight: 28,
+			lineHeight: 44,
+			fontFamily: fontFamilyAccent,
+		},
+		largeX: {
+			fontSize: 32,
+			fontWeight: 600,
+			lineHeight: 36,
 			fontFamily: fontFamilyAccent,
 		},
 	},
 
 	fontTitle2: {
 		regular: {
-			fontSize: 20,
-			fontWeight: 600,
-			lineHeight: 24,
-			fontFamily: fontFamilyAccent,
-		},
-		compact: {
 			fontSize: 20,
 			fontWeight: 600,
 			lineHeight: 24,
@@ -188,7 +201,7 @@ export const tutoriaTheme: ThemeTutoriaDescription = {
 		regular: {
 			fontSize: 16,
 			fontWeight: 500,
-			lineHeight: 18,
+			lineHeight: 24,
 			fontFamily: fontFamilyBase,
 		},
 	},
