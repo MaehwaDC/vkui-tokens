@@ -89,6 +89,17 @@ export const tutoriaThemeAdaptiveTokens: ThemeTutoriaAdaptiveTokens = {
 	tutoriaLayoutMaxWidth: {
 		regular: 1224,
 	},
+
+	// button
+	tutoriaSizeButtonBaseSmallBorderRadius: {
+		regular: 12,
+	},
+	tutoriaSizeButtonBaseMediumBorderRadius: {
+		regular: 10,
+	},
+	tutoriaSizeButtonBaseLargeBorderRadius: {
+		regular: 8,
+	},
 };
 
 export const tutoriaTheme: ThemeTutoriaDescription = {
@@ -286,9 +297,6 @@ export const tutoriaTheme: ThemeTutoriaDescription = {
 	},
 	sizeButtonLargeHeight: {
 		regular: 44,
-	},
-	sizeBorderRadius: {
-		regular: 12,
 	},
 
 	// layout
