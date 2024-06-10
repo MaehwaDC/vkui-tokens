@@ -36,10 +36,15 @@ export const tutoriaThemeColors: LocalTutoriaColorsDescriptionStruct = {
 	tutoriaColorIconWarning: '#FC9C0A',
 	tutoriaColorIconInfo: '#008DF2',
 	tutoriaColorIconLink: '#008DF2',
+	tutoriaColorIconSecondary: '#78828D',
 
 	// separator
 	tutoriaColorSeparatorPrimaryAlpha: toneOpacity('#E9ECEF', 0.2),
 	tutoriaColorSeparatorSecondaryAlpha: toneOpacity('#E9ECEF', 0.1),
+
+	// lesson button
+	tutoriaColorBackgroundLessonButton: { normal: '#E3FEC8', hover: '#D4FDAC', active: '#C6FD91' },
+	tutoriaColorLessonButton: '#426C19',
 
 	// stroke
 	tutoriaColorStrokePrimary: '#181B1E',
