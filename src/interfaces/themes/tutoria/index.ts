@@ -43,13 +43,9 @@ export interface LocalTutoriaColorsDescriptionStruct {
 	tutoriaColorIconWarning: ColorDescription;
 	tutoriaColorIconInfo: ColorDescription;
 	tutoriaColorIconLink: ColorDescription;
-	tutoriaColorIconSecondary: ColorDescription;
 
 	tutoriaColorSeparatorPrimaryAlpha: ColorDescription;
 	tutoriaColorSeparatorSecondaryAlpha: ColorDescription;
-
-	tutoriaColorBackgroundLessonButton: ColorDescription;
-	tutoriaColorLessonButton: ColorDescription;
 
 	tutoriaColorStrokePrimary: ColorDescription;
 	tutoriaColorStrokeSecondary: ColorDescription;
