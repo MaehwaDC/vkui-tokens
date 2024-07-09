@@ -113,7 +113,7 @@ export const tutoriaTheme: ThemeTutoriaDescription = {
 		colorBackgroundContent: { normal: '#FFFFFF', hover: '#F4F5F7', active: '#E9ECEF' },
 		colorBackgroundContrast: { normal: '#FFFFFF', hover: '#F4F5F7', active: '#E9ECEF' },
 		colorBackgroundAccent: { normal: '#0077FF', hover: '#3392FF', active: '#66ADFF' },
-		colorBackgroundSecondary: { normal: '#E9ECEF', hover: '#E9ECEF', active: '#D4D9DE' },
+		colorBackgroundSecondary: { normal: '#E9ECEF', hover: '#D4D9DE', active: '#BEC5CE' },
 		colorBackgroundSecondaryAlpha: { normal: '#F4F5F7', hover: '#E9ECEF', active: '#D4D9DE' },
 		colorTransparent: { normal: 'transparent', hover: '#F4F5F7', active: '#E9ECEF' },
 		colorBackgroundNegative: { normal: '#FF4046', hover: '#FF666B', active: '#FFB3B5' },
