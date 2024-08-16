@@ -89,6 +89,16 @@ export const tutoriaThemeAdaptiveTokens: ThemeTutoriaAdaptiveTokens = {
 	tutoriaLayoutMaxWidth: {
 		regular: 1224,
 	},
+	tutoriaSizeFieldHorizontalPadding: {
+		compactX: 10,
+		compact: 12,
+		regular: 14,
+	},
+	tutoriaSizeFieldVerticalPadding: {
+		compactX: 6,
+		compact: 8,
+		regular: 10,
+	},
 
 	// button
 	tutoriaSizeButtonBaseSmallBorderRadius: {

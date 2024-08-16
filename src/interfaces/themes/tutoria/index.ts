@@ -11,6 +11,8 @@ import { ThemeVkBase, ThemeVkBaseDescription } from '@/interfaces/themes/vkBase'
 export interface ThemeTutoriaLocalSizes {
 	tutoriaSizePaddingCard: number;
 	tutoriaLayoutMaxWidth: number;
+	tutoriaSizeFieldHorizontalPadding: number;
+	tutoriaSizeFieldVerticalPadding: number;
 
 	tutoriaSizeButtonBaseSmallBorderRadius: number;
 	tutoriaSizeButtonBaseMediumBorderRadius: number;
