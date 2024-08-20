@@ -13,6 +13,7 @@ const fontFamilyBase = `Roboto, ${fontFamilyFallbacks}`;
 export const tutoriaThemeColors: LocalTutoriaColorsDescriptionStruct = {
 	// background
 	tutoriaColorBackgroundPrimary: { normal: '#F4F5F7', hover: '#E9ECEF', active: '#D4D9DE' },
+	tutoriaColorBackgroundContent: { normal: '#FFFFFF', hover: '#F4F5F7', active: '#E9ECEF' },
 	tutoriaColorBackgroundContentInverse: { normal: '#181B1E', hover: '#41474E', active: '#5C646D' },
 	tutoriaColorBackgroundOverlayAlpha: toneOpacity('#181B1E', 0.4),
 	tutoriaColorBackgroundNeutral: '#939FAD',
@@ -134,7 +135,7 @@ export const tutoriaTheme: ThemeTutoriaDescription = {
 		colorTextSecondary: '#5C646D',
 		colorTextTertiary: '#939FAD',
 		colorTextContrast: '#FFFFFF',
-		colorTextAccent: '#0077FF',
+		colorTextAccent: { normal: '#0077FF', hover: '#005FCC', active: '#004799' },
 		colorTextPositive: '#02D14E',
 		colorTextNegative: '#FF4046',
 

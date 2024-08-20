@@ -26,6 +26,7 @@ export interface ThemeTutoriaOverValues {
 export interface LocalTutoriaColorsDescriptionStruct {
 	// токены цветов тутории
 	tutoriaColorBackgroundPrimary: ColorDescription;
+	tutoriaColorBackgroundContent: ColorDescription;
 	tutoriaColorBackgroundContentInverse: ColorDescription;
 	tutoriaColorBackgroundOverlayAlpha: ColorDescription;
 	tutoriaColorBackgroundNeutral: ColorDescription;

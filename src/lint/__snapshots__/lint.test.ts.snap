@@ -1,3 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`lint snapshot 1`] = `[]`;
+exports[`lint snapshot 1`] = `
+[
+  "tutoria: colors.colorBackgroundSecondaryAlpha error: Color token type mismatch: alpha token name but opaque value",
+  "tutoria: colors.colorTransparent error: Color token type mismatch: alpha token name but opaque value",
+  "tutoria: colors.tutoriaColorCardBoxShadow error: Color token type mismatch: opaque token name but alpha value",
+  "tutoriaDark: colors.tutoriaColorCardBoxShadow error: Color token type mismatch: opaque token name but alpha value",
+]
+`;
