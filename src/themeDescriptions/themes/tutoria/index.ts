@@ -250,7 +250,7 @@ export const tutoriaTheme: ThemeTutoriaDescription = {
 		regular: {
 			fontSize: 14,
 			fontWeight: 400,
-			lineHeight: 18,
+			lineHeight: 20,
 			fontFamily: fontFamilyBase,
 		},
 	},
